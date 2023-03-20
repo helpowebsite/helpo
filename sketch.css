@@ -9,21 +9,20 @@
 
 /* ---------------- START OF HEADER ---------------- */
 nav{
-    display: flex;
-    height: 80px;
-    width: 100%;
-    background: #ffffffee;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px 0 100px;
-    flex-wrap: wrap;
-  }
-  nav .logo{
-    color: #111;
-    font-size: 35px;
-    font-weight: 600;
-    text-align: -600px;
-  }
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav img{
+  display: flex;
+  max-width: 190px;
+  margin-left: -50px;
+}
   nav ul{
     display: flex;
     flex-wrap: wrap;
@@ -45,7 +44,7 @@ nav{
   nav ul li a.active,
   nav ul li a:hover{
     color: #111;
-    background: #88ABFF;
+    background: #bdcfff;
   }
   nav .menu-btn i{
     color: #fff;
@@ -187,10 +186,10 @@ section{
   background-color: #000;
 }
 .colors .option:nth-child(3){
-  background-color: #E02020;
+  background-color: #e763c6;
 }
 .colors .option:nth-child(4){
-  background-color: #6DD400;
+  background-color: #f3de83;
 }
 .colors .option:nth-child(5){
   background-color: #4A98F7;
