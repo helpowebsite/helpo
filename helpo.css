@@ -17,17 +17,16 @@ nav{
   display: flex;
   height: 80px;
   width: 100%;
-  background: #ffffffee;
+  background: #ffffff;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 100px;
   flex-wrap: wrap;
 }
-nav .logo{
-  color: #111;
-  font-size: 35px;
-  font-weight: 600;
-  text-align: -600px;
+nav img{
+  width: 20px;
+  height: 80px;
+  margin-left: -50px;
 }
 nav ul{
   display: flex;
