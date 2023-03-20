@@ -26,7 +26,6 @@ nav{
 nav img{
   display: flex;
   max-width: 190px;
-  height: 80px;
   margin-left: -50px;
 }
 nav ul{
