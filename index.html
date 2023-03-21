@@ -25,30 +25,38 @@
                <label for="signup" class="slide signup">Signup</label>
                <div class="slider-tab"></div>
             </div>
+
+<!-------LOG IN FORM-------> 
             <div class="form-inner">
                <form method="post" autocomplete="off" name="google-sheet">
-               <form action="termsconditions.html" class="login">
-                  <div class="field">
-                     <div class="form-group">
-                        <input type="text" name="Email" class="form-control" placeholder="Email Address" value="" required="">
-                     </div>   
-                  </div>
-                  <div class="field">
-                     <div class="form-group">
-                        <input type="password" name="Password" class="form-control" placeholder="Password " value="" required="">
-                     </div> 
-                  </div>
-                  <div class="pass-link">
-                     <a href="#">Forgot password?</a>
-                  </div>
-                  <div class="field btn">
-                     <div class="btn-layer"></div>
-                     <input type="submit" value="Login">
-                  </div>
-                  <div class="signup-link">
-                     Not a member? <a href="">Signup now</a>
-                  </div>
+                  <form action="">
+                     <div class="field">
+                        <div class="form-group">
+                           <input type="text" name="Email" class="form-control" placeholder="Email Address" value="" required="">
+                        </div>   
+                     </div>
+                     <div class="field">
+                        <div class="form-group">
+                           <input type="password" name="Password" class="form-control" placeholder="Password " value="" required="">
+                        </div> 
+                     </div>
+                     <div class="pass-link">
+                        <a href="#">Forgot password?</a>
+                     </div>
+                     <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Login">
+                     </div>
+                     <div class="signup-link">
+                        Not a member? <a href="">Signup now</a>
+                     </div>
+                  </form>
                </form>
+<!-------LOG IN FORM-------> 
+
+
+
+<!-------SIGN UP FORM-------> 
                <form action="termsconditions.html" class="signup">
                   <div class="field">
                      <input type="text" placeholder="Email Address" required>
@@ -67,6 +75,10 @@
             </div>
          </div>
       </div>
+<!-------SIGN UP FORM-------> 
+
+
+
       <script>
          const scriptURL = 'https://script.google.com/macros/s/AKfycbxfZqNraERH76pBoYBNuqszerxkoKj8iVSrw1Cdmip2e89_ooZbbEQ-rTkyeCjl7lADww/exec'
          const form = document.forms['google-sheet']
@@ -74,7 +86,7 @@
          form.addEventListener('submit', e => {
            e.preventDefault()
            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-             .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+             .then(response => alert("You have logged in."))
              .catch(error => console.error('Error!', error.message))
              window.location.assign("termsconditions.html")
          })
