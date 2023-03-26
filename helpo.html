@@ -5,29 +5,151 @@
     <title>Helpo</title>
     <link rel="stylesheet" href="helpo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Iconscout Link For Icons -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
 
 
-<!-- header -->
-<nav>
-  <div class="logo">
-    <img src="https://live.staticflickr.com/65535/52744393371_bc0075463a_h.jpg"></img>
+<!------------ SIDEBAR ------------>
+<div class="sidebar close">
+  <div class="logo-details">
+    <span class="logo_name">Helpo</span>
   </div>
-  <input type="checkbox" id="click">
-  <label for="click" class="menu-btn">
-    <i class="fas fa-bars"></i>
-  </label>
-  <ul>
-    <li><a class="active" href="helpo.html">Notes</a></li>
-    <li><a href="todo.html">List</a></li>
-    <li><a href="sketch.html">Sketch</a></li>
-    <li><a href="index.html">Logout</a></li>
-  </ul>
-</nav>
-<!-- end of header -->
+  <ul class="nav-links">
+
+  <nav>
+    <div class="logo">
+      <img src="https://imagizer.imageshack.com/v2/657x657q90/924/OyqLUP.png"></img>
+    </div>
+  </nav>
+
+<!----------->
+    <li>
+      <div class="iocn-link">
+        <a href="#">
+          <i class='bx bx-book-alt' ></i>
+          <span class="link_name">Category</span>
+        </a>
+        <i class='bx bxs-chevron-down arrow' ></i>
+      </div>
+      <ul class="sub-menu">
+        <li><a class="link_name" href="#">Notes</a></li>
+        <li><a href="#">HTML & CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">PHP & MySQL</a></li>
+      </ul>
+    </li>
+<!-------------------------->
+    <li>
+      <a href="whiteboard.html">
+        <i class='bx bx-paint' ></i>
+        <span class="link_name">Whiteboard</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="whiteboard.html">Whiteboard</a></li>
+      </ul>
+    </li>
+<!-------------------------->
+    <li>
+      <a href="pomodoro.html">
+        <i class='bx bx-timer' ></i>
+        <span class="link_name">Pomodoro Timer</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="pomodoro.html">Pomodoro Timer</a></li>
+      </ul>
+    </li>
+<!-------------------------->
+    <li>
+      <a href="calendar.html">
+        <i class='bx bx-calendar' ></i>
+        <span class="link_name">Calendar</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="calendar.html">Calendar</a></li>
+      </ul>
+    </li>
+<!-------------------------->
+    <li>
+      <div class="iocn-link">
+        <a href="#">
+          <i class='bx bx-plug' ></i>
+          <span class="link_name">Plugins</span>
+        </a>
+        <i class='bx bxs-chevron-down arrow' ></i>
+      </div>
+      <ul class="sub-menu">
+        <li><a class="link_name" href="#">Plugins</a></li>
+        <li><a href="#">UI Face</a></li>
+        <li><a href="#">Pigments</a></li>
+        <li><a href="#">Box Icons</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-compass' ></i>
+        <span class="link_name">Explore</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="#">Explore</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-history'></i>
+        <span class="link_name">History</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="#">History</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-cog' ></i>
+        <span class="link_name">Setting</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="#">Setting</a></li>
+      </ul>
+    </li>
+    <li>
+  <div class="profile-details">
+    <div class="profile-content">
+      <!--<img src="image/profile.jpg" alt="profileImg">-->
+    </div>
+    <div class="name-job">
+      <div class="profile_name">Prem Shahi</div>
+      <div class="job">Web Desginer</div>
+    </div>
+    <i class='bx bx-log-out' ></i>
+  </div>
+</li>
+</ul>
+</div>
+
+<section class="home-section">
+  <div class="home-content">
+    <i class='bx bx-menu' ></i>
+  </div>
+</section>
+
+<script>
+let arrow = document.querySelectorAll(".arrow");
+for (var i = 0; i < arrow.length; i++) {
+  arrow[i].addEventListener("click", (e)=>{
+ let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+ arrowParent.classList.toggle("showMenu");
+  });
+}
+let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".bx-menu");
+console.log(sidebarBtn);
+sidebarBtn.addEventListener("click", ()=>{
+  sidebar.classList.toggle("close");
+});
+</script>
+<!------------ SIDEBAR ------------>
 
     <div class="popup-box">
       <div class="popup">
