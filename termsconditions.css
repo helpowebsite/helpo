@@ -3,19 +3,29 @@
     font-family: 'Poppins', sans-serif;
   }
 
-body{
+  body{
     margin: 0;
     padding: 0;
-    background: url(image.jpg);
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
-    background-image: url('https://live.staticflickr.com/65535/52531399588_f9329a5ac4_c.jpg');
-    background-size: 100% 100%;
-    animation: bganimation 15s infinite;
+    background: linear-gradient(-45deg, #ffffff, #9bc6ff);
+    background-size: 500% 500%;
+    animation: gradient 6s ease infinite;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 50% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 
   .terms-box{
@@ -44,7 +54,7 @@ body{
   }
   
   .terms-text::-webkit-scrollbar-thumb{
-    background-color: #ab97f5;
+    background-color: #9dbfff;
   }
   
   .terms-text h2{
@@ -60,7 +70,7 @@ body{
   }
   
   .terms-box h4 span{
-    color: #ab97f5;
+    color: #9dbfff;
   }
   
   .gray-btn{
@@ -93,7 +103,7 @@ body{
     border:unset;
     font-size: 19px;
     font-weight: 600;
-    background-image: linear-gradient(125deg,#ffc7ec,#97c3f5);
+    background-image: linear-gradient(125deg,#c9d3ff,#69afff);
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
