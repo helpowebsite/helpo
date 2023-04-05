@@ -6,7 +6,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-html,body{
+body{
     background: linear-gradient(-45deg, #ffffff, #9bc6ff);
       background-size: 500% 500%;
       animation: gradient 6s ease infinite;
