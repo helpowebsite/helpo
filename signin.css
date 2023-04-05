@@ -5,15 +5,23 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
 html,body{
-    place-items: center;
-    display: grid;
-    height: 100%;
-    width: 100%;
-    font-family: var(--Poppins);
-    background-image: url('https://live.staticflickr.com/65535/52530378207_7292fb0a65_c.jpg');
-    background-size: 100%;
+    background: linear-gradient(-45deg, #ffffff, #9bc6ff);
+      background-size: 500% 500%;
+      animation: gradient 6s ease infinite;
   }
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 50% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+}
 ::selection{
     background: #ab97f5;
     color: #fff;
