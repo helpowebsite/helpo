@@ -46,7 +46,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  color: #343d64;
+  color: #1c2c74;
   border-radius: 5px;
   background-color: #fff;
 }
@@ -285,7 +285,7 @@
   padding: 0 20px;
   padding-left: 50px;
   color: #fff;
-  background: linear-gradient(90deg, #3f4458, transparent);
+  background: linear-gradient(90deg, #97aff3, transparent);
   cursor: pointer;
 }
 /* even event */
@@ -434,7 +434,7 @@
   padding: 0 10px;
   font-size: 1rem;
   font-weight: 400;
-  color: #373c4f;
+  color: #c1c8e7;
 }
 .add-event-body .add-event-input input::placeholder {
   color: #a5a5a5;
