@@ -11,8 +11,8 @@
   width: 100%;
   gap: 10px;
   padding: 10px;
-  max-width: 1090px;
-  padding-left: 270px;
+  max-width: 1200px;
+  padding-left: 220px;
 }
 section{
   background: #fff;
@@ -71,20 +71,19 @@ section{
   position: relative;
 }
 .colors .option:nth-child(1){
-  background-color: #fff;
-  border: 1px solid #bfbfbf;
-}
-.colors .option:nth-child(2){
   background-color: #000;
 }
-.colors .option:nth-child(3){
+.colors .option:nth-child(2){
   background-color: #e763c6;
 }
-.colors .option:nth-child(4){
+.colors .option:nth-child(3){
   background-color: #f3de83;
 }
-.colors .option:nth-child(5){
+.colors .option:nth-child(4){
   background-color: #4A98F7;
+}
+.colors .option:nth-child(5){
+  background: linear-gradient(45deg, #ff0000, #ff0000, #ff9a00, #4fdc4a, #1c7fee, #5f15f2, #ffffff);
 }
 .colors .option.selected::before{
   position: absolute;

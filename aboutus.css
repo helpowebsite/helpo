@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Shrikhand&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-left: 50px;
+}
+.container .card{
+   width: 250px;
+   height: 350px;
+   padding: 30px 20px;
+   margin: 20px;
+   margin-left: 40px;
+   background: #f2f3f7;
+   -webkit-box-shadow:0 0px 25px #004cbe2a;
+   box-shadow:0 0px 25px #004cbe2a;
+   border-radius: 5px;
+}
+.container .card .content{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.container .card .content .imgBx{
+   width: 180px;
+   height: 180px;
+   border-radius: 50%;
+   position: relative;
+   margin-bottom: 10px;
+   overflow: hidden;
+}
+.container .card .content .imgBx img{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.container .card .content .contentBx h1{
+   color: #1a1a1a;
+   font-size: 1.8rem;
+   font-weight: bold;
+   text-align: center;
+   letter-spacing: 1px;
+   line-height: 40px;
+}
+.container .card .content .contentBx h5{
+   color: #6c758f;
+   padding-top: 15px;
+   font-size: 1.2rem;
+   font-weight: bold;
+   text-align: center;
+}
+.container .card .content .sci{
+   margin-top: 20px;
+}
+.container .card .content .sci a{
+   text-decoration: none;
+   color: #6c758f;
+   font-size: 30px;
+   margin: 10px;
+   transition: color 0.4s;
+}
+.container .card .content .sci a:hover{
+   color: #0196e3;
+}

@@ -6,23 +6,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-:root {
-  --primary-clr: #73a3eb;
-}
-
-/* SCROLL BAR */
-::-webkit-scrollbar {
-  width: 5px;
-}
-::-webkit-scrollbar-track {
-  background: #f5f5f5;
-  border-radius: 50px;
-}
-::-webkit-scrollbar-thumb {
-  background: var(--primary-clr);
-  border-radius: 50px;
-}
-
 ::selection{
   color: #fff;
   background: #77acf1;
