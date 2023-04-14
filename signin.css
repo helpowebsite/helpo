@@ -8,8 +8,8 @@
 
 html,body{
     background: linear-gradient(-45deg, #ffffff, #9bc6ff);
-      background-size: 500% 500%;
-      animation: gradient 6s ease infinite;
+    background-size: 500% 500%;
+    animation: gradient 6s ease infinite;
   }
   @keyframes gradient {
       0% {
@@ -22,10 +22,6 @@ html,body{
           background-position: 0% 50%;
       }
 }
-::selection{
-    background: #ab97f5;
-    color: #fff;
-}
 .wrapper{
   overflow: hidden;
   max-width: 370px;
@@ -33,9 +29,9 @@ html,body{
   padding: 30px;
   border-radius: 5px;
   box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
-  margin: auto;
   margin-top: 60px;
-  margin-left: 900px;
+  position: relative;
+  left: 40px;
 }
 .wrapper .title-text{
   display: flex;
