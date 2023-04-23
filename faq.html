@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  </head>
+  <body>
+
+    <!------------ SIDEBAR ------------>
+<div class="sidebar close">
+  <div class="logo-details">
+      <img src="https://imagizer.imageshack.com/v2/657x657q90/924/OyqLUP.png"></img>
+      <span class="logo_name">Helpo</span>
+  </div>
+  <ul class="nav-links">
+<!--------------->
+<li>
+  <a href="helpo.html">
+  <i class='bx bx-book-alt'></i>
+    <span class="link_name">Notes</span>
+  </a>
+  <ul class="sub-menu blank">
+    <li><a class="link_name" href="helpo.html">Notes</a></li>
+  </ul>
+</li>
+<!--------------->
+    <li>
+      <a href="whiteboard.html">
+      <i class='bx bx-edit'></i>
+        <span class="link_name">Whiteboard</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="whiteboard.html">Whiteboard</a></li>
+      </ul>
+    </li>
+<!--------------->
+    <li>
+      <a href="pomodoro.html">
+      <i class='bx bx-timer' ></i>
+        <span class="link_name">Pomodoro Timer</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="pomodoro.html">Pomodoro Timer</a></li>
+      </ul>
+    </li>
+<!--------------->
+    <li>
+      <a href="calendar.html">
+      <i class='bx bx-calendar'></i>
+        <span class="link_name">Calendar</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="calendar.html">Calendar</a></li>
+      </ul>
+    </li>
+<!--------------->
+    <li>
+    <a href="aboutus.html">
+      <i class='bx bx-user'></i>
+      <span class="link_name">About Us</span>
+    </a>
+    <ul class="sub-menu blank">
+      <li><a class="link_name" href="aboutus.html">About Us</a></li>
+    </ul>
+  </li>
+<!--------------->
+<li>
+  <a href="faq.html">
+    <i class='bx bx-info-circle'></i>
+    <span class="link_name">FAQs</span>
+  </a>
+  <ul class="sub-menu blank">
+    <li><a class="link_name" href="faq.html">FAQs</a></li>
+  </ul>
+</li>
+<!--------------->
+  <li>
+  <div class="profile-details">
+      <div class="logout">Logout</div>
+    <a href="login.php"><i class='bx bx-log-out'></i></a>
+  </div>
+</li>
+</ul>
+</div>
+<div class="home-sctn">
+  <div class="home-content">
+    <i class='bx bx-menu' ></i>
+  </div>
+</div>
+
+<script src="sidebar.js"></script>
+<!------------ SIDEBAR ------------>
+
+    <div class="wrapper">
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq">
+        <button class="accordion">
+          What is HELPO?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Helpo is a note-taking website designed to help students
+            to be more productive with their studies. The website offers
+            4 main features which are Notes, Whiteboard, Pomodoro Timer,
+            and calendar.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How can I use the Notes feature?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            <br>- First press the '+' button to start adding a note</br>
+            <br>- Next, add a title to your note</br>
+            <br>- Then you can add description to your notes</br>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How can I use the Whiteboard feature?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            <br>- In the left panel, there are tools that you can use to
+            use the whiteboard</br>
+            <br>- By clicking Shapes, you can add shapes to the whiteboard</br>
+            <br>- Fill Color lets you fill the hollow shapes with your desired color</br>
+            <br>- Brush can be used to draw, while Eraser can be used to </br>
+            remove everything drawn on the canvas</br>
+            <br>- You can change the size of the brush and eraser by dragging
+            the blue slider from left to right and vice versa</br>
+            <br>- You can also choose your own colors</br>
+            <br>- By clicking clear canvas, everything that's written
+            or drawn will be erased and reset back into a white blank canvas</br>
+            <br>- you can download the image of your sketches by clicking save image</br>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How can I use the Pomodoro Timer feature?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            <br>- First, click add task. Then add the name of the task
+            you are currently working on</br>
+            <br>- Then add the number of estimated pomodoros your task will take.</br>
+            <br>- The pomodoro is fixed to 25 mins. By clicking start, the 
+            timer will start counting down until it finishes</br>
+            <br>- As the countdown finishes, it will add +1 to the number of
+            estimated pomodoros you input. With this you can track the 
+            number of pomodoros you have used until it reaches the amount</br>
+            of estimated number you input</br>
+            <br>- You can take short or long breaks as well. Short breaks
+            reach 5 mins and long breaks reach a total of 15 mins</br>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How can I use the Calendar feature?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            <br>- The calendar is mainly used to track events and date</br>
+            <br>- By clicking the '+' sign at the bottom right it will require you to
+            add the name of the event and the time the event starts and ends</br>
+            <br>- The time is formatted into a 24-hour, so if you input 18:00
+            as the time it translate as 6PM in a 12-hour format</br>
+            <br>- By clicking at the event displayed it will ask you to delete
+            the said event if you confirm it to be deleted.</br> 
+            <br>- You can also look at other years by clicking the arrows</br>
+            <br>- Clicking 'Today' will redirect you to the present date</br>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
